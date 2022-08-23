@@ -2,7 +2,7 @@
 @section('container')
     <div class="container">
         <h3>Product</h3>
-        <a href="" class="btn btn-warning" />Tambah</a>
+        <a href="/product/add_product" class="btn btn-warning" />Tambah</a>
         <table class="table table-striped">
             <tr>
                 <th>No</th>

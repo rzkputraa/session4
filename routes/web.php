@@ -19,5 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/product', [ProductController::class, 'store']);
+
 //? Artinya Route /product itu mengakses controller ProductController methode / function index
 Route::get('/product', [ProductController::class, 'index']);
+
+//? Artinya Route /product/add_product itu mengakses controller ProductController methode / function create
+Route::get('/product/add_product', [ProductController::class, 'create']);

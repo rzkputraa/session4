@@ -15,6 +15,17 @@ class ProductController extends Controller
 
     public function create()
     {
-        //    return redirect()->routee
+        return view('product.create');
+    }
+
+    public function store(Request $request)
+    {
+        Product::create([
+            'name' => $request->name,
+            'description' => $request->description,
+            'price' => $request->price,
+        ]);
+
+        return redirect('/product');
     }
 }
