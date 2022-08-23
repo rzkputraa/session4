@@ -12,4 +12,9 @@ class ProductController extends Controller
         $products = Product::get();
         return view('product.index', compact('products'));
     }
+
+    public function create()
+    {
+        //    return redirect()->routee
+    }
 }
