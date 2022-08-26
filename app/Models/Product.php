@@ -9,5 +9,6 @@ class Product extends Model
 {
     use HasFactory;
     // protected $table = 'products';
+    // ? fillable artinya colomn di table yang boleh diisi
     protected $fillable = ['name', 'description', 'price'];
 }
